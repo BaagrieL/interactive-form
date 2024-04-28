@@ -44,27 +44,50 @@
             text-align: center
 
         & .card-front
-                right: -100px
-                background: url(../images/bg-card-front.png)
-                
-                .card-info
-                    display: flex
-                    flex-direction: column
-                    position: absolute
-                    bottom: 0
-                    width: 100%
-                    padding: 20px 25px
+            display: grid
+            grid-template-rows: 40% 60%
+            right: -100px
+            background: url(../images/bg-card-front.png)
 
-                    > div
-                        padding-top: 15px
-                        display: flex
-                        justify-content: space-between
-                        font-size: 1.6rem
+            & > div:first-child
+                display: flex
+                align-items: center
+                padding: 30px
+                gap: 10px
+
+            & div:first-child:before
+                content: ""
+                border: 1px solid #fff
+                background-color: #fff
+                border-radius: 50%
+                width: 50px
+                height: 50px
+
+            & div:first-child:after
+                content: ""
+                border: 1px solid #fff
+                border-radius: 50%
+                width: 20px
+                height: 20px              
+                
+            .card-info
+                display: flex
+                flex-direction: column
+                position: absolute
+                bottom: 0
+                width: 100%
+                padding: 20px 25px
+
+                > div
+                    padding-top: 15px
+                    display: flex
+                    justify-content: space-between
+                    font-size: 1.6rem
 
 
         & .card-back
-                right: -160px
-                background: url(../images/bg-card-back.png)
+            right: -160px
+            background: url(../images/bg-card-back.png)
 
     
 
