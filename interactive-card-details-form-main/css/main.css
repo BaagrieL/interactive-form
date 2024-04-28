@@ -25,7 +25,14 @@
   flex-grow: 1;
   background-image: url(../images/bg-main-desktop.png);
 }
-.sidebar > div {
+.sidebar .cards__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  position: relative;
+  left: 20px;
+}
+.sidebar .cards__container > div {
   position: relative;
   height: 245px;
   width: 447px;
@@ -36,11 +43,11 @@
   font-size: 2.5rem;
   text-align: center;
 }
-.sidebar .card-front {
+.sidebar .cards__container .card-front {
   right: -100px;
   background: url(../images/bg-card-front.png);
 }
-.sidebar .card-front .card-info {
+.sidebar .cards__container .card-front .card-info {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -48,13 +55,13 @@
   width: 100%;
   padding: 20px 25px;
 }
-.sidebar .card-front .card-info > div {
+.sidebar .cards__container .card-front .card-info > div {
   padding-top: 15px;
   display: flex;
   justify-content: space-between;
   font-size: 1.6rem;
 }
-.sidebar .card-back {
+.sidebar .cards__container .card-back {
   right: -160px;
   background: url(../images/bg-card-back.png);
 }
@@ -82,4 +89,15 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 18px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }/*# sourceMappingURL=main.css.map */
