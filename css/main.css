@@ -85,8 +85,15 @@
   font-size: 1.6rem;
 }
 .sidebar .cards__container .card-back {
+  position: relative;
   right: -160px;
   background: url(../images/bg-card-back.png);
+}
+.sidebar .cards__container .card-back > p {
+  position: absolute;
+  top: 44.5%;
+  right: 13%;
+  font-size: 17px;
 }
 
 .form__content {
